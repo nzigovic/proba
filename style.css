@@ -84,7 +84,7 @@ body {
     justify-content:first baseline;
 }
 .btnn2 {
-    background-color: #6401ef;
+    background-color: #efb701;
     /* border: 2px solid #6401ef; */
     padding: 6px 11px;
     border-radius: 2px;
@@ -95,7 +95,7 @@ body {
 
 
 .btnn2:hover {
-   background-color: #1eff00cc;
+   background-color: #ff0000cc;
    border-color: #ff0022b4;
 
 }
