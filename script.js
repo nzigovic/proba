@@ -1,7 +1,5 @@
 
 
-  var arr = []
-
   function pushNumber() {
     var num = +document.getElementById("number").value;
     arr.push(num);
@@ -11,9 +9,9 @@
   
   
   function arr_zadatak(min, max) {
-       arr;
-      var najveci = 0;
-      for (var i = 0; i < 10; i++) {    
+       
+      var najveci = arr[0];
+      for (var i = 1; i < 10; i++) {    
           if ( arr[i] > najveci ) {
               var najveci = arr[i];
           }
@@ -37,8 +35,6 @@
       pushNumber();
     }
   });
-  
-  
   
   
   
