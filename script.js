@@ -8,17 +8,28 @@
     document.getElementById("number").value = "";
   }
   
-  
-  function arr_zadatak(min, max) {
-       arr;
-      var najveci = 0 ;
+
+  function arr_zadatak() {
+       
+      var najveci = 0;
       for (var i = 0  ; i < arr.length; i++) {    
           if ( arr[i] > najveci ) {
               var najveci = arr[i];
           }
         }
       
-      console.log(najveci);
+  document.getElementById("btnn3").addEventListener("click", function () {
+    
+  //   // document.getElementById("list").textContent = "Najveci upisani broj je:"  ;
+  //   var list = document.getElementById("list");
+  //   list.innerHTML = "";
+    
+  // num = 0;
+  // document.getElementById("numberOfItems").innerH = num;
+  });
+
+  document.getElementById("list").textContent = "Najveci upisani broj je:" +najveci;
+      // console.log(najveci);
   }
   arr_zadatak();
   
@@ -29,7 +40,6 @@
   document.getElementById("btnn2").addEventListener("click", function () {
     arr_zadatak()
     
-  document.getElementById("list").textContent = najveci;
   });
   
   
