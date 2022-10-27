@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(#5cccbc, #326b86);;
+    background-image: linear-gradient(#00DDFF, #f75990);;
 }
 
 .container {
@@ -18,11 +18,12 @@ body {
 }
 
 .todo__box {
-    box-shadow: 0px 0px 5px 0px #6f6f71;
+    box-shadow: 5px 5px 5px 4px #2eeb47;
     border-radius: 8px;
     overflow: hidden;
     padding: 25px;
-    width: 380px;
+    width: 350px;
+    height: 50vh;
     background-color: white;
 }
 
@@ -38,19 +39,26 @@ body {
 
 .img {
     width: 20px;
-    margin-bottom: 1px;
+    
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btnn1 {
-    background-color: #a067ed;
-    border: 2px solid #a067ed;
+    background-color: #57239b;
+    /* border: 2px solid #16062b; */
     padding: 5px 10px;
     border-radius: 2px;
+    /* width: 20px; */
+    margin-left: 2px;
 }
 
 .btnn1:hover {
-   background-color: #802dad;
-   border: 2px solid #802dad;
+   background-color: #12abb6;
+   /* border: 2px solid #2f8d0a; */
 }
 
 .list-items {
@@ -70,21 +78,56 @@ body {
 .p {
     font-size: 17px;
 }
-
+.footerr {
+    display: flex;
+    align-items: flex-start;
+    justify-content:first baseline;
+}
 .btnn2 {
     background-color: #6401ef;
-    border: 2px solid #6401ef;
+    /* border: 2px solid #6401ef; */
     padding: 6px 11px;
     border-radius: 2px;
     color: white;
+
+    animation: 0.5s;
 }
+
 
 .btnn2:hover {
-   background-color: #6a00ff;
-   border-color: #6a00ff;
+   background-color: #1eff00cc;
+   border-color: #ff0022b4;
+
 }
 
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    225deg,
+    #3f22a7 0%,
+    #0e10b9 29%,
+    #1980c5 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 35px;
+}
 
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 
 
 

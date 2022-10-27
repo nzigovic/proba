@@ -1,4 +1,5 @@
-
+  var arr = []
+  var najveci=[]
 
   function pushNumber() {
     var num = +document.getElementById("number").value;
@@ -9,14 +10,14 @@
   
   
   function arr_zadatak(min, max) {
-       
-      var najveci = arr[0];
-      for (var i = 1; i < 10; i++) {    
+       arr;
+      var najveci = 0 ;
+      for (var i = 0  ; i < arr.length; i++) {    
           if ( arr[i] > najveci ) {
               var najveci = arr[i];
           }
-      }
-      console.log(arr);
+        }
+      
       console.log(najveci);
   }
   arr_zadatak();
@@ -27,6 +28,8 @@
   });
   document.getElementById("btnn2").addEventListener("click", function () {
     arr_zadatak()
+    
+  document.getElementById("list").textContent = najveci;
   });
   
   
@@ -36,5 +39,4 @@
     }
   });
   
-  
-  
+
