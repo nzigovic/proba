@@ -1,52 +1,48 @@
-  var arr = []
-  var najveci=[]
+var arr = []
+var najveci;
 
-  function pushNumber() {
-    var num = +document.getElementById("number").value;
-    arr.push(num);
-  
-    document.getElementById("number").value = "";
-  }
-  
+function pushBroj() {
+  var num = +document.getElementById("number").value;
+  arr.push(num);
 
-  function arr_zadatak() {
-       
-      var najveci = 0;
-      for (var i = 0  ; i < arr.length; i++) {    
-          if ( arr[i] > najveci ) {
-              var najveci = arr[i];
-          }
-        }
-      
-  document.getElementById("btnn3").addEventListener("click", function () {
-    
-  //   // document.getElementById("list").textContent = "Najveci upisani broj je:"  ;
-  //   var list = document.getElementById("list");
-  //   list.innerHTML = "";
-    
-  // num = 0;
-  // document.getElementById("numberOfItems").innerH = num;
-  });
+  document.getElementById("number").value = "";
+}
 
-  document.getElementById("list").textContent = "Najveci upisani broj je:" +najveci;
-      // console.log(najveci);
-  }
-  arr_zadatak();
-  
-  
-  document.getElementById("btnn1").addEventListener("click", function () {
-    pushNumber();
-  });
-  document.getElementById("btnn2").addEventListener("click", function () {
-    arr_zadatak()
-    
-  });
-  
-  
-  document.getElementById("number").addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-      pushNumber();
+
+function arr_zadatak() {
+  najveci = arr[0];
+  for (var i = 1; i < arr.length; i++) {
+    if (arr[i] > najveci) {
+      najveci = arr[i];
     }
-  });
-  
+  }
+  document.getElementById("list").textContent = "ovo su svi upisani brojevi " + arr;
+  document.getElementById("max").textContent = "najveci broj je " + najveci;
+}
+
+
+document.getElementById("btnn1").addEventListener("click", function () {
+  pushBroj();
+
+});
+document.getElementById("btnn2").addEventListener("click", function () {
+  arr_zadatak()
+
+
+});
+document.getElementById("btnn3").addEventListener("click", function () {
+  var list = document.getElementById("list");
+  list.innerHTML = "Najveci pocetni broj je: 0";
+  arr = [];
+  najveci = [];
+});
+
+
+
+
+document.getElementById("number").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    pushBroj();
+  }
+});
 
